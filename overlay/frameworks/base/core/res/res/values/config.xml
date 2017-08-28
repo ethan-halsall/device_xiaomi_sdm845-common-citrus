@@ -287,7 +287,7 @@
 
     <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
     <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
-    
+
     <!-- ImsService package name to bind to by default, if config_dynamic_bind_ims is true -->
     <string name="config_ims_package">org.codeaurora.ims</string>
 
@@ -377,4 +377,7 @@
 
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+    
+    <!-- Enable dual LTE capability support-->
+    <bool name="config_dual_LTE_capability">true</bool>
 </resources>
