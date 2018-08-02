@@ -38,6 +38,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc
 
+# WLAN configuration file
+PRODUCT_COPY_FILES += \
+		frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
+    frameworks/native/data/etc/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml
+
 # Display
 PRODUCT_PACKAGES += \
     libvulkan
