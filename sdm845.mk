@@ -47,6 +47,12 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
+# HOSTAPD
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/configs/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    $(LOCAL_PATH)/configs/hostapd.conf:system/etc/hostapd/hostapd_default.conf
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common
